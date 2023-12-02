@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio.supritha</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+       <img src="images/logo2.png" id="logo3"  >
+        <div class="menu" id="sidemenu">
+          <ul id="list">
+            <li> <a href="#header">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#services">Services</a></li>
+            <li> <a href="#projects">Projects</a></li>
+            <li> <a href="#contact">contact</a></li>
+          </ul>
+          <div class="toggle-btn" id="btn">
+            <span id="btnText">Light</span>
+            <i class="fa-solid fa-sun" id="btnIcon"></i>
+          </div>
+           <i class="fa-solid fa-xmark bars " onclick="closemenu();"></i>
+        </div>
+        <i class="fa-solid fa-bars bars " onclick="openmenu();"></i>
+      </nav>
+      </div>
+  </div>
+     <div class="content-section">
+      <div class="container">
+        <div class="row1">
+          <div class="left-content ">
+          
+          <h1>
+            Hello, I'm <span>supritha</span><br> From India
+          </h1>
+          <P>I'm a Frontend Devloper</P>
+          <a href="images/my-cv.pdf" download class="btn1 btn2"> Download CV</a>
+        </div>
+        <div class="right-content ">
+          <img src="images/aboutme.png" >
+          <div class="color-box"></div>
+        </div>
+        </div>
+        
+      </div>
+     </div>
+
+    </div>
+  </div>
+  <!---------about-------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/background2.png">
+        </div>
+        <div class="about-col-2">
+         <h1 class="sub-title">About Me</h1>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident voluptate molestias dicta nihil laboriosam odio quo cupiditate, obcaecati ipsa quibusdam distinctio consequatur voluptatibus dolore doloremque repellat optio numquam debitis tempora?
+        eos veritatis sequi velit! Deleniti Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate obcaecati exercitationem a sapiente, consectetur cupiditate blanditiis temporibus rerum quae nostrum! Sint obcaecati rerum animi luptatum labore pariatur!</p>
+        <div class="tab-title">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI?UX</span><br>Desigining web.app interface</li>
+            <li><span>web devlopment</span><br>Desigining web.app interface</li>
+            <li><span>App devlopment</span><br>Desigining web.app interface</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2018-2020</span><br>Desigining web.app interface</li>
+            <li><span>2021-2022</span><br>Desigining web.app interface</li>
+            <li><span>2023-present</span><br>Desigining web.app interface</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>XII</span><br>Desigining web.app interface</li>
+            <li><span>XII</span><br>Desigining web.app interface</li>
+            <li><span>BE(ISE)</span><br>Desigining web.app interface</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-----services-->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title2"> My <span class="service">services</span></h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur earum sequi suscipit quia possimus non, </p>
+         <a href="#"><button class="learnmore">Learn more</button></a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur earum sequi suscipit quia possimus non,  </p>
+          <a href="#"><button class="learnmore">Learn more</button></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur earum sequi suscipit quia possimus non, </p>
+          <a href="#"><button class="learnmore">Learn more</button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!---projects-->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title2">My <span class="service">work</span></h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Weather App</h3>
+            <p>The app connects you to the talented prople around the world</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>The app connects you to the talented prople around the world</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>e-commerce App</h3>
+            <p>The app connects you to the talented prople around the world</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <a href="#" class="btn1">See more</a>
+    </div>
+  </div>
+  <!--contact-->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me
+          </h1>
+          <p> <i class="fa-solid fa-paper-plane"></i> contact123@gmail.com </p>
+          <p><i class="fa-solid fa-square-phone"></i> 02345679</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+            <button type="submit" class="btn1 btn3">submit</button>
+          </form>
+          
+
+        </div>
+       
+      </div>
+      <a href="#header" class="move-up"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+    </div>
+    <div class="copyright">
+      <p> copyright © supritha 2023</p>
+      <p>All Rights Reserved</p>
+      
+    </div>
+  </div>
+  
+
+  <script src="script.js">
+   
+  </script>
+  
+</body>
+</html>
